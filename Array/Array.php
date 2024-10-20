@@ -69,6 +69,27 @@ foreach ( $fruits as $letter => $fruit)
 {
 echo $letter. " = " .$fruit. "<br>";
 }
+
+// 6- Write a PHP script to calculate and display the average temperature for the recorded reads, also the
+// script should display the list of the five lowest and the five highest temperatures 
+$avarage = array
+(
+    78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62,
+65, 64, 68, 73, 75, 79, 73
+);
+$Array_av = array_sum($avarage) / count ($avarage);
+echo "Average Temperature is: " .$Array_av;
+echo "<br>";
+sort ($avarage);
+$lowestTemperatures = array_slice($avarage, 0, 7);
+echo "List of seven lowest temperatures: " . implode(", ", $lowestTemperatures) . "\n";
+
+$highestTemperatures = array_slice($avarage,  -5);
+echo "List of seven Highest temperatures: " . implode(", ", $highestTemperatures) . "\n";
+
+
+
+echo max($avarage);
     ?>
 </body>
 </html>

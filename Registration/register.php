@@ -189,7 +189,7 @@ body {
     <div class="container">
         <div class="screen">
             <div class="screen__content">
-                <form class="login" action="home.php" method="POST">
+                <form class="login" action="crud.php" method="POST"  enctype="multipart/form-data">
                     <div class="login__field">
                         <i class="login__icon fas fa-user"></i>
                         <input type="text" class="login__input" name="name" placeholder="Name">
@@ -205,6 +205,11 @@ body {
                     <div class="login__field">
                         <i class="login__icon fas fa-lock"></i>
                         <input type="password" class="login__input" name="Confirm Password" placeholder="Confirg Password">
+                    </div>
+					<div class="login__field">
+                        <label for="imageUpload">Upload Image:</label>
+                        <input type="file" id="imageUpload" accept="image/*">
+                        <img id="userImage" src="" alt="User Image" style="display:none; width: 100px; height: 100px; margin-top: 10px;">
                     </div>
               
                     <button class="button login__submit">
