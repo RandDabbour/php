@@ -19,11 +19,12 @@ edit
 <button>X</button>
 <form action="" method="post" enctype="multipart/form-data" >
     Choose img:
-    <input type=""
+    <input type="">
 </form>
 
     <?php
 include "connect.php";
+// spl_autoload_register();
 
 // Check if form values are set
 if (isset($_REQUEST['name']) && isset($_REQUEST['email']) && isset($_REQUEST['password'])) {

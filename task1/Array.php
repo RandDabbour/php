@@ -90,6 +90,19 @@ echo "List of seven Highest temperatures: " . implode(", ", $highestTemperatures
 
 
 echo max($avarage);
+
+//7. Write a PHP program to merge the following two arrays.
+$array1 = array("color" => "red", 2, 4);
+$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
+
+$result = array_merge($array1, $array2);
+print_r($result);
+
+// 8. Write a PHP function to change the following array's and convert all the strings to upper case.
+$colors = array("red", "blue", "white", "yellow");
+
+$uppercaseColors = array_map('strtoupper', $colors);
+print_r($uppercaseColors);
     ?>
 </body>
 </html>
